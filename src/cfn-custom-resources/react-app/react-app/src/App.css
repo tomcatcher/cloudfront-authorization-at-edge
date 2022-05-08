@@ -15,6 +15,11 @@
 .explanation {
   max-width: 1000px;
   text-align: center;
+  margin: 10;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* Tooltip container */
@@ -69,3 +74,4 @@
   font-family: monospace;
   white-space: pre;
 }
+

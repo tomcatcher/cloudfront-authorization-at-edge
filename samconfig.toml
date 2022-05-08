@@ -1,0 +1,13 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "serverlessrepo-sa-cluster-controls-0-04"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1vmm34c24p4df"
+s3_prefix = "serverlessrepo-sa-cluster-controls-0-04"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "EmailAddress=\"tomas.tudja@ixperta.com\" RedirectPathSignIn=\"/parseauth\" RedirectPathSignOut=\"/\" RedirectPathAuthRefresh=\"/refreshauth\" SignOutUrl=\"/signout\" AlternateDomainNames=\"sa-test-cluster-controls.ixpertainfra.cz\" CookieSettings=\"{\n  \\\"idToken\\\": null,\n  \\\"accessToken\\\": null,\n  \\\"refreshToken\\\": null,\n  \\\"nonce\\\": null\n}\" OAuthScopes=\"phone, email, profile, openid, aws.cognito.signin.user.admin\" HttpHeaders=\"{\n  \\\"Content-Security-Policy\\\": \\\"default-src 'none'; img-src 'self'; script-src 'self' https://code.jquery.com https://stackpath.bootstrapcdn.com; style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com; object-src 'none'; connect-src 'self' https://*.amazonaws.com https://*.amazoncognito.com\\\",\n  \\\"Strict-Transport-Security\\\": \\\"max-age=31536000; includeSubdomains; preload\\\",\n  \\\"Referrer-Policy\\\": \\\"same-origin\\\",\n  \\\"X-XSS-Protection\\\": \\\"1; mode=block\\\",\n  \\\"X-Frame-Options\\\": \\\"DENY\\\",\n  \\\"X-Content-Type-Options\\\": \\\"nosniff\\\"\n}\" EnableSPAMode=\"true\" CreateCloudFrontDistribution=\"true\" CookieCompatibility=\"amplify\" AdditionalCookies=\"{}\" UserPoolArn=\"\" UserPoolAuthDomain=\"\" UserPoolClientId=\"\" UserPoolClientSecret=\"\" UserPoolGroupName=\"\" Version=\"2.1.1\" LogLevel=\"none\" PermissionsBoundaryPolicyArn=\"\" RewritePathWithTrailingSlashToIndex=\"false\" WebACLId=\"\" DefaultRootObject=\"index.html\" S3OriginDomainName=\"\" CustomOriginDomainName=\"\" CustomOriginHeaderName=\"\" CustomOriginHeaderValue=\"\" OriginAccessIdentity=\"\" CloudFrontAccessLogsBucket=\"\""
+image_repositories = []
+disable_rollback = true

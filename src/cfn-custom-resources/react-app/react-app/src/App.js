@@ -48,14 +48,15 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Skoda-Auto Jira and Confluence Cluster Controls</h1>
 
       <p className="explanation">
-        Welcome <strong>{state.email || state.username}</strong>. You are signed in!
-      </p>
-
-      <p className="explanation">
-        <a href="https://iii96lb5h2.execute-api.us-east-1.amazonaws.com/default/start-sa-test-cluster-0-01" target="_blank"><button>START</button></a><a href="https://b9902qynn2.execute-api.us-east-1.amazonaws.com/default/stop-sa-test-cluster-0-01" target="_blank"><button>STOP</button></a><a href="https://afu8hpf1ek.execute-api.us-east-1.amazonaws.com/default/status-sa-test-cluster-0-01" target="_blank"><button>STATUS</button></a>{" "}<button onClick={() => Auth.signOut()}>Sign out</button>
+	<p><h1>Skoda-Auto Cluster Control Panel</h1></p>
+	<p>
+        <a href="https://iii96lb5h2.execute-api.us-east-1.amazonaws.com/default/start-sa-test-cluster-0-01" target="_blank"><button>START</button></a>
+	<a href="https://b9902qynn2.execute-api.us-east-1.amazonaws.com/default/stop-sa-test-cluster-0-01" target="_blank"><button>STOP</button></a>
+	<a href="https://afu8hpf1ek.execute-api.us-east-1.amazonaws.com/default/status-sa-test-cluster-0-01" target="_blank"><button>STATUS</button></a>
+	{" "}<a href="https://deployer.ixpertainfra.cz"><button>Home</button></a>
+	</p>
       </p>
 
     </div>
