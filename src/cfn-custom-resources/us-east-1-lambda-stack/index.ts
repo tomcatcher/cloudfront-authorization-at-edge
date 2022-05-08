@@ -8,6 +8,8 @@
     To this end, in us-east-1 a separate stack will be created with just these Lambda@Edge functions.
 */
 
+//upload1
+
 import {
   CloudFormationCustomResourceHandler,
   CloudFormationCustomResourceDeleteEvent,

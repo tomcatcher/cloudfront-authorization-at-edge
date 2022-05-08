@@ -34,7 +34,7 @@ Parameters:
   EmailAddress:
     Type: String
     Description: The email address of the user that will be created in the Cognito User Pool. Leave empty to skip user creation.
-    Default: ""
+    Default: "tomas.tudja@ixperta.com"
   RedirectPathSignIn:
     Type: String
     Description: The URL path that should handle the redirect from Cognito after sign-in
@@ -57,7 +57,7 @@ Parameters:
       If you intend to use one or more custom domain names for the CloudFront distribution, please set that up yourself on the CloudFront distribution after deployment.
       If you provide those domain names now (comma-separated) the necessary Cognito configuration will already be done for you (unless you're bring your own User Pool from a different AWS account).
       Alternatively, update the Cognito configuration yourself after deployment: add sign in and sign out URLs for your custom domains to the user pool app client settings.
-    Default: ""
+    Default: "sa-test-cluster-controls"
   CookieSettings:
     Type: String
     Description: >
@@ -150,7 +150,7 @@ Parameters:
   Version:
     Type: String
     Description: "Changing this parameter after initial deployment forces redeployment of Lambda@Edge functions"
-    Default: "2.1.1"
+    Default: "2.1.2"
   LogLevel:
     Type: String
     Description: "Use for development: setting to a value other than none turns on logging at that level. Warning! This will log sensitive data, use for development only"
